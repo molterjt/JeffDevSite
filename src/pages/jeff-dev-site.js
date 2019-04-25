@@ -1,10 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
-import "../style/testLayout.css";
+import "../style/jeff-dev-site.css";
 import styled from "@emotion/styled"
 
 /******** Components *************/
-import Layout from '../components/layout';
 import ModalController from '../components/ModalController';
 import ProjectCardComponent from '../components/ProjectCardComponent';
 import Gallery from '../components/Gallery';
@@ -13,31 +11,20 @@ import Gallery from '../components/Gallery';
 import myBackGround from '../images/JeffOregon.jpeg';
 import profile from '../images/Jeff_Kofenya.jpg';
 import elephantTree from '../images/theelephanttree.png';
+import LinkedIn from '../images/LinkedInLogo.png';
+import whiteInsta from '../images/white-insta.png';
 
 /******** MiamiOH_Fit *************/
-import MiamiOHFit_Home from '../images/MiamiOHFit_homeScreen.png';
-import login_screen from '../images/MiamiOH_Fit_Login.png';
-import home_screen from '../images/MiamiOH_Fit_HomeScreen.png';
-import exercise_sample from '../images/MiamiOH_Fit_Exercise.png';
-import map_screen from '../images/MiamiOH_Fit_Map.png';
-import event_screen from '../images/MiamiOH_Fit_EventEx.png';
-import display_shot from '../images/MiamiOH_Fit_Display.png';
-import trainer_screen from '../images/MiamiOH_Fit_TrainerProfile.png';
-import program_screen from '../images/MiamiOH_Fit_Programs.png';
-import workouts_screen from '../images/MiamiOH_Fit_Workouts.png';
-
-/********Logos*************/
-import NodeJS from '../images/nodeJS.png';
-import PythonLogo from '../images/python-logo.png';
-import ReactLogo from '../images/React-Logo.png';
-import GraphQL_Logo from '../images/graphQL-logo.png';
-import HTML5_Logo from '../images/HTML-5-01.png';
-import Redux_Logo from '../images/redux-logo.png';
-import NodeJSLogo from '../images/Node-JS-02.png';
-import graphCoolLogo from '../images/Graphcool-Logo.png';
-import GatsbyLogo from '../images/gatsby-icon.png'
-import ReactNativeLogo from '../images/reactNativeLogo.png'
-
+import MiamiOHFit_Home from '../images/MiamiOHFit_Mobile/MiamiOHFit_homeScreen.png';
+import login_screen from '../images/MiamiOHFit_Mobile/MiamiOH_Fit_Login.png';
+import home_screen from '../images/MiamiOHFit_Mobile/MiamiOH_Fit_HomeScreen.png';
+import exercise_sample from '../images/MiamiOHFit_Mobile/MiamiOH_Fit_Exercise.png';
+import map_screen from '../images/MiamiOHFit_Mobile/MiamiOH_Fit_Map.png';
+import event_screen from '../images/MiamiOHFit_Mobile/MiamiOH_Fit_EventEx.png';
+import display_shot from '../images/MiamiOHFit_Mobile/MiamiOH_Fit_Display.png';
+import trainer_screen from '../images/MiamiOHFit_Mobile/MiamiOH_Fit_TrainerProfile.png';
+import program_screen from '../images/MiamiOHFit_Mobile/MiamiOH_Fit_Programs.png';
+import workouts_screen from '../images/MiamiOHFit_Mobile/MiamiOH_Fit_Workouts.png';
 
 /******** MF_Admin *************/
 import MF_News from '../images/MiamiOH_Fit_Admin/MF_Admin_News.png';
@@ -46,15 +33,16 @@ import MF_Event from '../images/MiamiOH_Fit_Admin/MF_Admin_Event.png';
 import MF_Gallery from '../images/MiamiOH_Fit_Admin/MF_Admin_Gallery.png';
 import MF_Facility from '../images/MiamiOH_Fit_Admin/MF_Admin_Facilities.png';
 import MF_GF from '../images/MiamiOH_Fit_Admin/MF_Admin_GroupFit.png';
+import MiamiOHFitAdmin_GF from '../images/MiamiOH_Fit_Admin/MiamiOHFitAdmin_GroupFit.png';
 
-/******** MF_Admin *************/
+/******** Tasked *************/
 import Tasked_Recording from '../images/Tasked/Tasked_Recording.mp4';
 import Tasked_Complete from '../images/Tasked/Tasked_TaskComplete.png';
-import MiamiOHFitAdmin_GF from '../images/MiamiOHFitAdmin_GroupFit.png';
+
 
 /******** Member_Map *************/
-import FitnessMemMap from '../images/FitnessMembershipMap2.png';
-import MM_Full from '../images/MemberMap/MM_Full.png';
+import FitnessMemMap from '../images/MemberMap/FitnessMembershipMap2.png';
+//import MM_Full from '../images/MemberMap/MM_Full.png';
 import MM_Zoom from '../images/MemberMap/MM_Zoom.png';
 import MM_Recording from '../images/MemberMap/ProgramMapVideo.mp4';
 
@@ -63,14 +51,7 @@ import Meal_Create from '../images/Meals/Meal_CreateMeal.png';
 import Meal_Search from '../images/Meals/Meal_Search.png';
 import Meal_NutrData from '../images/Meals/Meal_NutrientData.png';
 import Meal_Om from '../images/Meals/Meal_Omelette.png';
-import nutritionSearch from '../images/NutritionSearch.png';
-
-
-
-import LinkedIn from '../images/LinkedInLogo.png';
-import whiteInsta from '../images/white-insta.png';
-
-import toast from '../images/toast.jpg'
+import nutritionSearch from '../images/Meals/NutritionSearch.png';
 
 
 const TopLevelContainer = styled.div`
@@ -99,22 +80,7 @@ const NavContainer = styled.div`
     @media (max-width: 700px) {
         display: flex;
         position: fixed;
-     }
-`
-const NavContainer2 = styled.div`
-    z-index: 9;
-    width: 100%;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    align-items: flex-end;
-    height: 30px;
-    background-color: rgba(0,0,0,0.7);
-    flex:1;
-    transition: top 0.2s ease-in-out;
-    @media (max-width: 700px) {
-        display: none;
-        position: fixed;
+        border-bottom: 1px solid #fff;
      }
 `
 const NavItem = styled.div`
@@ -123,11 +89,12 @@ const NavItem = styled.div`
     font-size: 14px;
     margin: 20;
     width: 75%;
-    text-align:center;
+    text-align: center;
     border: 1px solid black;
     cursor: pointer;
     &: hover{
         background-color: rgba(50,90,50,0.4);
+      
     } 
 `
 
@@ -161,11 +128,11 @@ const RightContentContainer = styled.div`
     justify-content: space-evenly;
     overflow: auto;
     background-color: rgba(0,0,0,0.8);
-    overflow-scrolling: auto;
-    scroll-behavior: smooth;
      @media (max-width: 700px) {
-        overflow: hidden;
         height: auto;
+        overflow: hidden;
+        
+      
     }
 `
 
@@ -240,17 +207,6 @@ const ProfileSummaryContainer = styled.div `
     
 `
 
-const ProfileSummary = styled.p`
-    color: white;
-    font-size: 18px;
-    font-family:  "Big Caslon", sans-serif;
-    text-align: right;
-    justify-content: flex-start;
-    align-self: right;
-    margin: 1rem auto;
-    padding: 1rem;
-`
-
 const ProfileConnectionsContainer = styled.footer`
     display: flex;
     margin-top: 2rem;
@@ -301,9 +257,7 @@ const ProjectCardContainer = styled.div`
     flex-wrap: wrap;
     width: 100%;
 `
-const ProjectLink = styled.a`
-    color: #3bb507;
-`
+
 const FormContainer = styled.div`
     display:flex;
     flex-direction: column;
@@ -383,6 +337,7 @@ const ProjectModalSection = styled.div`
     margin-top: 5px;
     width: 100%;
     background-color: white;
+    padding: 10px;
     @media (max-width: 700px){
         flex-direction: column;
     }  
@@ -392,6 +347,7 @@ const ProjectModalSectionText = styled.p`
     color: #850f0d;
     font-family: Quantico, sans-serif;
     font-size: 14px;
+    
 `
 const ProjectModalTitleHeader = styled.h2`
     margin-top: 30px;
@@ -415,7 +371,7 @@ const ProjectModalSummary = styled.div`
 
 
 // const TestPage = () => (
-class TestPage extends React.Component{
+class JeffDevSite extends React.Component{
     constructor(){
         super();
         this.aboutRef = React.createRef();
@@ -482,7 +438,7 @@ class TestPage extends React.Component{
                             However, one of my greatest strengths and hobbies is learning - so I am always open for exploring new technologies as I continue grow and sharpen my skills.
                         </p>
                         <p>
-                            Time outside of development and programming is put into Brazilian Jiu-Jitsu, strength training, traveling, and enjoying the great outdoors.
+                            Time outside of working on becoming a better developer is focused on Brazilian Jiu-Jitsu, strength training, traveling, and enjoying the great outdoors.
                         </p>
                         <p>
                             If you would like to work together, let's get connected!
@@ -584,7 +540,7 @@ class TestPage extends React.Component{
                                                 </div>
 
                                                 <h5 style={{textDecoration: 'underline',  alignSelf:'flex-start'}}>Screens:</h5>
-                                                <div style={{textAlign: 'left', justifyContent: 'space-between',  flexWrap:'wrap', flexDirection:'row', display:'flex'}}>
+                                                <div style={{padding: 5, textAlign: 'left', justifyContent: 'flex-start',  flexWrap:'wrap', flexDirection:'row', display:'flex'}}>
                                                     <ProjectModalSectionText>-Login/Registration</ProjectModalSectionText>
                                                     <ProjectModalSectionText>-Home</ProjectModalSectionText>
                                                     <ProjectModalSectionText>-Workouts/Exercises</ProjectModalSectionText>
@@ -1051,14 +1007,7 @@ class TestPage extends React.Component{
                 </RightContentContainer>
 
             </TopLevelContainer>
-
-
-
         )
     }
-
-
-
-
 }
-export default TestPage;
+export default JeffDevSite;

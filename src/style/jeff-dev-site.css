@@ -1,0 +1,211 @@
+
+
+.gallery-image{
+    width: 70%;
+    z-index: 7;
+    min-height: 400px;
+}
+
+/******* MAX WIDTH 700 *********/
+
+@media (max-width: 700px) {
+    .gallery-image{
+        width: 100%;
+
+    }
+}
+
+
+
+
+/******* Modal *********/
+.modal-box{
+    height: 90%;
+    width: 80%;
+    z-index: 5;
+    border: 1px solid whitesmoke;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1;
+    align-content: center;
+    position: absolute;
+    top:0;
+    left: 12.5%;
+    margin: 20px;
+    overflow: auto;
+    box-shadow: 0 30px 30px rgba(50,50,93,.6),0 30px 30px rgba(0,0,0,.8) ;
+}
+@media (max-width: 700px) {
+    .modal-box {
+        height: 100%;
+        position: center;
+        display: block;
+        align-self: center;
+        justify-content: center;
+        top: unset;
+        left: unset;
+    }
+}
+
+.modal-button{
+    z-index: 1;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 1px groove ;
+    border-bottom-right-radius: 30%;
+    border-top-left-radius: 30%;
+    display: run-in;
+    position: relative;
+    float: right;
+    align-self: flex-end;
+    top: 45px;
+    right: -10px;
+    -webkit-transform-style: preserve-3d ;
+    -webkit-transition: -webkit-transform 0.7s ease-in ;
+    box-shadow: 0 5px 5px rgba(50,50,93,.6),0 3px 3px rgba(250,250,250,.1) ;
+    -webkit-backface-visibility: hidden ;
+    -webkit-perspective: 1000px ;
+    -webkit-transform: rotate(40deg);
+    background-color: #212121;
+    background-blend-mode: hard-light;
+    background-clip: padding-box;
+    background-attachment: revert;
+    font-size: 14px;
+    color: ghostwhite;
+    cursor: pointer;
+    -webkit-transition-property: height, width;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: height, width;
+    -moz-transition-duration: 1s;
+
+}
+
+/******* Project Cards *********/
+.card-container {
+    display: flex;
+    flex: auto ;
+    /*min-height: 300px;*/
+    height: auto;
+    /*width: 100%;*/
+    /*margin: 1rem;*/
+
+}
+
+.card {
+    -webkit-transform-style: preserve-3d ;
+    -webkit-perspective: 1000px ;
+    display: flex ;
+    /*padding: 5px;*/
+    flex-direction: column ;
+    margin: 1rem ;
+    width: 100% ;
+    height: 100% ;
+    min-height: 300px;
+}
+.back, .front {
+    position: absolute;
+    -webkit-backface-visibility: hidden ;
+    -webkit-transition: -webkit-transform 0.7s ease-in ;
+    display: flex ;
+    flex-direction: column ;
+    justify-content: center ;
+    align-content: center ;
+    align-items: center ;
+    width: 100% ;
+    height: 100% ;
+    color: #212121 ;
+    background-color: #fff ;
+    box-shadow: 0 10px 10px rgba(50,50,93,.3),0 8px 10px rgba(0,0,0,.1) ;
+
+}
+.back {
+    -webkit-transform: rotateY(180deg) ;
+    overflow: hidden;
+}
+.front {
+    background: #fff;
+}
+
+.modal-button:hover{
+   background-color: springgreen;
+    color: black;
+    height: 40px;
+    width: auto;
+    font-size: 16px;
+    text-decoration: underline;
+    -webkit-transition-property: height, width;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: height, width;
+    -moz-transition-duration: 1s;
+    transition-property: height, width;
+    transition-duration: 1s;
+    -webkit-transition: -webkit-transform 0.5s ease-in ;
+    /*-webkit-transform: rotate(0deg);*/
+}
+.modal-button:checked{
+    z-index: 0;
+}
+
+.card-container:hover .back{
+
+    -webkit-transform: rotateY(0deg) ;
+}
+.card-container:hover .front {
+    -webkit-transform: rotateY(-180deg) ;
+}
+
+/******* GRADIENTS *********/
+
+.gradient-modal-gallery {
+    background: -moz-linear-gradient(
+            -45deg, rgba(76, 76, 76, 1) 14%,
+            rgba(89, 89, 89, 1) 16%,
+            rgba(102, 102, 102, 1) 25%,
+            rgba(89, 89, 89, 1) 27%,
+            rgba(89, 89, 89, 1) 27%,
+            rgba(71, 71, 71, 1) 35%,
+            rgba(44, 44, 44, 1) 50%,
+            rgba(17, 17, 17, 1) 60%,
+            rgba(0, 0, 0, 1) 65%,
+            rgba(0, 0, 0, 1) 71%,
+            rgba(43, 43, 43, 1) 76%,
+            rgba(28, 28, 28, 1) 80%,
+            rgba(19, 19, 19, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+            -45deg, rgba(76, 76, 76, 1) 14%,
+            rgba(89, 89, 89, 1) 16%,
+            rgba(102, 102, 102, 1) 25%,
+            rgba(89, 89, 89, 1) 27%,
+            rgba(89, 89, 89, 1) 27%,
+            rgba(71, 71, 71, 1) 35%,
+            rgba(44, 44, 44, 1) 50%,
+            rgba(17, 17, 17, 1) 60%,
+            rgba(0, 0, 0, 1) 65%,
+            rgba(0, 0, 0, 1) 71%,
+            rgba(43, 43, 43, 1) 76%,
+            rgba(28, 28, 28, 1) 80%,
+            rgba(19, 19, 19, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+            135deg, rgba(76, 76, 76, 1) 14%,
+            rgba(89, 89, 89, 1) 16%,
+            rgba(102, 102, 102, 1) 25%,
+            rgba(89, 89, 89, 1) 27%,
+            rgba(89, 89, 89, 1) 27%,
+            rgba(71, 71, 71, 1) 35%,
+            rgba(44, 44, 44, 1) 50%,
+            rgba(17, 17, 17, 1) 60%,
+            rgba(0, 0, 0, 1) 65%,
+            rgba(0, 0, 0, 1) 71%,
+            rgba(43, 43, 43, 1) 76%,
+            rgba(28, 28, 28, 1) 80%,
+            rgba(19, 19, 19, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.gradient-modal-gallery2{
+    background: rgb(206,220,231); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(206,220,231,1) 12%, rgba(89,106,114,1) 83%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(206,220,231,1) 12%,rgba(89,106,114,1) 83%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(206,220,231,1) 12%,rgba(89,106,114,1) 83%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}

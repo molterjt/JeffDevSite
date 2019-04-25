@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import "../style/jeff-dev-site.css";
 
 
-class Modal extends React.Component{
+export default class ModalBox extends React.Component{
     constructor(props){
         super(props);
         this.handleOutsideClick = this.handleOutsideClick.bind(this);
@@ -40,43 +41,30 @@ class Modal extends React.Component{
         return (
             <div
                 ref={node => (this.modal = node)}
+                className={'modal-box'}
                 style={{
-                    height: '90%',
-                    width: '75%',
-                    zIndex: 'auto',
-                    border: '1px solid red',
-                    justifyContent:'center',
-                    display: 'flex',
-                    flexWrap:'wrap',
-                    flexDirection:'column',
-                    flex: 1,
-                    alignContent:'center',
-                    position: 'absolute',
-                    top: 0,
-                    left: '12.5%',
-                    //padding: 20,
-                    margin: 20,
-                    overflow: 'scroll',
                     backgroundColor: (this.props.backColor ? this.props.backColor : '#fff'),
-
                     color: (this.props.modalTextColor ? this.props.modalTextColor : '#000'),
                 }}
 
             >
                 <div style={{height: '100%', width:'100%'}}>
-
                         <div
                             style={{height: '100%', width:'100%', textAlign:'center', display:'block',}}
                         >
-
                                 {this.props.children}
-
-
                         </div>
 
                         <button
                             type={'button'}
-                            style={{position:'absolute', top: 0, right:0}}
+                            style={{position:'absolute',
+                                top: 0, left:0,
+                                color: 'springgreen',
+                                backgroundColor: 'rgba(0,0,0,0.8)',
+                                textAlign:'center',
+                                borderRadius: '25%',
+                                cursor:'pointer'
+                            }}
                             onClick={this.props.onCloseRequest}
                         >
                             x
@@ -87,7 +75,7 @@ class Modal extends React.Component{
         );
     }
 }
-Modal.propTypes = {
+ModalBox.propTypes = {
     onCloseRequest: PropTypes.func,
     children: PropTypes.oneOfType([
         PropTypes.arrayOf(PropTypes.node),
@@ -97,50 +85,6 @@ Modal.propTypes = {
     modalTextColor: PropTypes.string,
 };
 
-export default class ModalController extends React.Component{
-    constructor(props){
-        super(props);
-        this.state={
-            showModal: false,
-        };
-    }
-    toggleModal(){
-        this.setState({ showModal: !this.state.showModal})
-    }
-    render(){
-        return(
-            <div style={{width: '100%'}}>
-                <button
-                    type={'button'}
-                    onClick={() => this.toggleModal()}
-                >
-                    {this.props.buttonLabel}
-                </button>
-                {
-                    this.state.showModal && (
-                        <Modal
-                            onCloseRequest={()=>this.toggleModal()}
-                            backColor={this.props.backColor}
-                            modalTextColor={this.props.modalTextColor}
-                        >
-                            {this.props.children}
-                    ,    </Modal>
-                    )
-                }
-
-            </div>
-        );
-    }
-}
-ModalController.propTypes = {
-    buttonLabel: PropTypes.string,
-    children: PropTypes.oneOfType([
-        PropTypes.arrayOf(PropTypes.node),
-        PropTypes.node
-    ]),
-    backColor: PropTypes.string,
-    modalTextColor: PropTypes.string,
-};
 
 
 
