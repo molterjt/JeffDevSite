@@ -458,14 +458,15 @@ class JeffDevSite extends React.Component{
 
                     <ProfileConnectionsContainer>
                         <ProfileConnection>
-                            <a href={"https://www.linkedin.com/in/jeffrey-molter-8741a627/"}>
+                            <a target="_blank" rel="noopener noreferrer" href={"https://www.linkedin.com/in/jeffrey-molter-8741a627/"}>
                                 <img src={LinkedIn} width={90} alt={'LinkedIn Logo'}/>
                             </a>
                         </ProfileConnection>
 
                         <ProfileConnection>
-                            <a style={{color:'white'}} href={"http://www.instagram.com/jeffreyT513"}>
-                                <img src={whiteInsta} width={30} alt={'LinkedIn Logo'}/>                        </a>
+                            <a style={{color:'white'}} target="_blank" rel="noopener noreferrer" href={"http://www.instagram.com/jeffreyT513"}>
+                                <img src={whiteInsta} width={30} alt={'LinkedIn Logo'}/>
+                            </a>
                         </ProfileConnection>
 
                     </ProfileConnectionsContainer>
@@ -561,18 +562,18 @@ class JeffDevSite extends React.Component{
                         <ProjectCardContainer>
                             { /*********  The Elephant Tree ************/}
                             <CardContainer>
-                                <ModalController
-                                    buttonLabel={'View Site'}
-                                    backColor={'black'}
-                                >
-                                    <iframe
-                                        src={'http://www.theElephantTree.org'}
-                                        style={{
-                                            height:'100%',
-                                            width:'100%',
-                                        }}
-                                    />
-                                </ModalController>
+                                {/*<ModalController*/}
+                                    {/*buttonLabel={'View Site'}*/}
+                                    {/*backColor={'black'}*/}
+                                {/*>*/}
+                                    {/*<video*/}
+                                        {/*src={'http://www.theElephantTree.org'}*/}
+                                        {/*style={{*/}
+                                            {/*height:'100%',*/}
+                                            {/*width:'100%',*/}
+                                        {/*}}*/}
+                                    {/*/>*/}
+                                {/*</ModalController>*/}
                                 <ProjectCardComponent
                                     style={{zIndex:-1}}
                                     title={'The Elephant Tree'}
@@ -585,7 +586,7 @@ class JeffDevSite extends React.Component{
                                     featureList={
                                         [
                                             {'name': 'Parallax Scrolling'},
-                                            {'name': 'Instagram Feed & Goolge Calendar Integration'},
+                                            {'name': 'Instagram Feed & Google Calendar Integration'},
                                             {'name': 'News Letter Subscribe Pop-Up'},
                                             {'name': 'Responsive Design'},
                                             {'name': 'Tech Stack: HTML, Javascript, jQuery, CSS, Bootstrap'},

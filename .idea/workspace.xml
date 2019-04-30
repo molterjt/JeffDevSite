@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbbefdda-df78-4016-9799-ed8f19893ca9" name="Default" comment="" />
+    <list default="true" id="fbbefdda-df78-4016-9799-ed8f19893ca9" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/pages/jeff-dev-site.js" afterPath="$PROJECT_DIR$/src/pages/jeff-dev-site.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,6 +19,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="jeff-dev-site.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/jeff-dev-site.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="468" column="28" lean-forward="false" selection-start-line="468" selection-start-column="28" selection-end-line="468" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#291#351#0" expanded="true" />
+                <element signature="e#503#556#0" expanded="true" />
+                <element signature="e#862#946#0" expanded="true" />
+                <element signature="e#1716#1784#0" expanded="true" />
+                <element signature="e#2274#2343#0" expanded="true" />
+                <element signature="e#2454#2528#0" expanded="true" />
+                <element signature="e#2691#2753#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -29,13 +50,6 @@
       </file>
       <file leaf-file-name="icon-512x512.png" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/icons/icon-512x512.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="icon-384x384.png" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/icons/icon-384x384.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
@@ -154,10 +168,10 @@
         <option value="$PROJECT_DIR$/src/components/ProjectCardComponent.js" />
         <option value="$PROJECT_DIR$/src/components/Gallery.js" />
         <option value="$PROJECT_DIR$/src/style/jeff-dev-site.css" />
-        <option value="$PROJECT_DIR$/src/pages/jeff-dev-site.js" />
         <option value="$PROJECT_DIR$/public/jeff-dev-site/index.html" />
         <option value="$PROJECT_DIR$/gatsby-config.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/pages/jeff-dev-site.js" />
       </list>
     </option>
   </component>
@@ -173,8 +187,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="31" />
-    <option name="y" value="120" />
+    <option name="x" value="10" />
+    <option name="y" value="70" />
     <option name="width" value="1386" />
     <option name="height" value="775" />
   </component>
@@ -209,8 +223,13 @@
             <path>
               <item name="jeff-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="jeff-site" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="icons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jeff-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jeff-site" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -277,17 +296,18 @@
       <option name="presentableId" value="Default" />
       <updated>1555123792503</updated>
       <workItem from="1555123793799" duration="229298000" />
-      <workItem from="1556588745283" duration="1431000" />
+      <workItem from="1556588745283" duration="2424000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230729000" />
+    <option name="totallyTimeSpent" value="231722000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="120" width="1386" height="775" extended-state="0" />
+    <frame x="10" y="70" width="1386" height="775" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2725275" sideWeight="0.49247313" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2725275" sideWeight="0.49247313" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -520,6 +540,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+            <marker date="1556226664183" expanded="true" signature="293:326" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -527,6 +551,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="e#145#170#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -548,6 +575,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -569,23 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/jeff-dev-site.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="493" column="52" lean-forward="false" selection-start-line="493" selection-start-column="52" selection-end-line="493" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-            <element signature="e#291#351#0" expanded="true" />
-            <element signature="e#503#556#0" expanded="true" />
-            <element signature="e#862#946#0" expanded="true" />
-            <element signature="e#1716#1784#0" expanded="true" />
-            <element signature="e#2274#2343#0" expanded="true" />
-            <element signature="e#2454#2528#0" expanded="true" />
-            <element signature="e#2691#2753#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/style/jeff-dev-site.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -597,6 +608,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
           <caret line="76" column="4" lean-forward="false" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -680,14 +694,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/icons/icon-384x384.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/icons/icon-512x512.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/icons/icon-384x384.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/pages/jeff-dev-site.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="468" column="28" lean-forward="false" selection-start-line="468" selection-start-column="28" selection-end-line="468" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#291#351#0" expanded="true" />
+            <element signature="e#503#556#0" expanded="true" />
+            <element signature="e#862#946#0" expanded="true" />
+            <element signature="e#1716#1784#0" expanded="true" />
+            <element signature="e#2274#2343#0" expanded="true" />
+            <element signature="e#2454#2528#0" expanded="true" />
+            <element signature="e#2691#2753#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
