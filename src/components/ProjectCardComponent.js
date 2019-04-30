@@ -68,13 +68,30 @@ const ProjectSummary = styled.div`
     padding: 5px;
     margin-top: 20px;
     overflow: auto;
+     @media (max-width: 450px) {
+        padding: 10px;
+        padding-top: 180px;
+     }
     
 `
 const ProjectFeature = styled.li`
-    color: #850f0d;
-    font-size: 14px;
+    // color: #850f0d;
+    color: #596f85;
+    font-size: 16px;
     font-family: 'Quantico', sans-serif;
     list-style-type: square;
+    @media (max-width: 1100px) {
+        font-size: 18px;
+     }
+      @media (max-width: 500px) {
+        font-size: 16px;
+     }
+      @media (max-width: 450px) {
+        font-size: 15px;
+     }
+     @media (max-width: 375px) {
+        color: black;
+     }
 `
 
 const ProjectCardComponent = (props) =>

@@ -49,7 +49,7 @@ export default class Gallery extends React.Component{
 
 
         return(
-            <div style={{display: 'flex', flexDirection: 'row', justifyContent:'center'}}>
+            <div style={{display: 'flex', flexDirection: 'row', justifyContent:'center', alignItems:'center'}}>
                 {images.map((obj, index) => (
 
                     <button
@@ -65,8 +65,8 @@ export default class Gallery extends React.Component{
                                 ? 'rgba(250,250,250,0.2)'
                                 : 'rgba(0,0,0,0.7)'
                         ),
-                        marginRight:20,
-                        marginTop: 25,
+                        marginRight:10,
+                        marginTop: 20,
                         position: 'relative',
                         alignSelf:'center',
                         top: -60,
@@ -137,6 +137,7 @@ export default class Gallery extends React.Component{
                                 color: 'white',
                                 backgroundColor: 'rgba(0,0,0,0.4)',
                                 width:'7%',
+                                minWidth: 30,
                                 marginLeft: 25,
                                 textAlign:'center',
                                 justifyContent:'center'
@@ -166,6 +167,7 @@ export default class Gallery extends React.Component{
                                     <img
                                         src={this.props.images[this.state.currentImage]}
                                         className={'gallery-image'}
+                                        alt={'Project Screen-shot'}
                                         style={{
                                             width: (this.props.galleryImageWidth ),
                                             height: (this.props.galleryImageHeight ),
@@ -213,6 +215,7 @@ export default class Gallery extends React.Component{
                                 color: 'white',
                                 backgroundColor: 'rgba(0,0,0,0.4)',
                                 width:'7%',
+                                minWidth: 30,
                                 marginRight: 25,
                                 textAlign:'center',
                                 justifyContent:'center'

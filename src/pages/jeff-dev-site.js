@@ -67,6 +67,9 @@ const TopLevelContainer = styled.div`
     @media (max-width: 700px) {
         flex-direction: column;
      }
+    @media (max-width: 1100px) {
+        flex-direction: column;
+    } 
 `
 const NavContainer = styled.div`
     z-index: 9;
@@ -86,6 +89,11 @@ const NavContainer = styled.div`
         position: fixed;
         border-bottom: 1px solid #fff;
      }
+     @media (max-width: 1100px) {
+        display: flex;
+        position: fixed;
+        border-bottom: 1px solid #fff;
+     }
 `
 const NavItem = styled.div`
     color: #fff;
@@ -97,10 +105,8 @@ const NavItem = styled.div`
     border: 1px solid black;
     cursor: pointer;
     &:hover{
-            transition: all 0.3s ease 0s;
-            background: linear-gradient(90deg, rgba(250, 250, 250, 0.4), rgba(0, 0, 0, 0.5));
-            // background-color: rgba(50,90,50,0.4);
-      
+        transition: all 0.3s ease 0s;
+        background-color: rgba(50,120,50,0.7);
     } 
 `
 
@@ -123,6 +129,12 @@ const LeftProfileContainer = styled.div`
     background-color: rgba(0,0,0,0.5);
     align-content: center;
     justify-content: space-around;
+    @media (max-width: 1100px) {
+        height: 350px;
+        width: 100%;
+        flex:1;
+       
+    }
 `
 
 const RightContentContainer = styled.div`
@@ -158,7 +170,29 @@ const RightContentContainer = styled.div`
             rgba(43, 43, 43, 1) 76%,
             rgba(28, 28, 28, 1) 80%,
             rgba(19, 19, 19, 1) 100%);
-}
+        }
+    }
+    @media (max-width: 1100px) {
+        flex:1;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background: linear-gradient(
+            135deg, 
+            rgba(250, 250, 250, 1) 5%,
+            rgba(89, 89, 89, 1) 16%,
+            rgba(250, 250, 250, 0.6) 20%,
+            rgba(89, 89, 89, 1) 27%,
+            rgba(89, 89, 89, 1) 27%,
+            rgba(250, 250, 250, 0.4) 35%,
+            rgba(44, 44, 44, 1) 50%,
+            rgba(17, 17, 17, 1) 60%,
+            rgba(0, 0, 0, 1) 65%,
+            rgba(250, 250, 250, 0.4) 71%,
+            rgba(43, 43, 43, 1) 76%,
+            rgba(28, 28, 28, 1) 80%,
+            rgba(19, 19, 19, 1) 100%);
+        }
     }
 `
 
@@ -216,11 +250,14 @@ const ProfilePicContainer = styled.div`
     flex: 1;
     margin-top: 1rem;
     align-content: center;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    
+    margin: 10px;
     @media (max-width: 700px) {
+        display: block;
+    }
+     @media (max-width: 1100px) {
         display: block;
     }
   
@@ -240,14 +277,16 @@ const Avatar = styled.img`
   @media (max-width: 700px) {
         height: 140px;
         width: 130px;
-        &:active{
-            transition: all 0.5s ease;
-            transform:  translate3d( 100px, 100px, 0) scale(2.5);
   }
+   @media (max-width: 1100px) {
+        margin-top: 50px;
+        height: 140px;
+        width: 130px;
   }
   &:active{
     transition: all 0.5s ease;
-    transform:  translate3d( 20px, 100px, 0) scale(2.5);
+    transform:  translate3d( 90px, 100px, 0) scale(2.5);
+    z-index: 26;
   }
 `
 
@@ -264,6 +303,10 @@ const ProfileSummaryContainer = styled.div `
     height: auto;
    
     @media (max-width: 700px) {
+        flex:1;
+        margin: 1rem;
+    }
+    @media (max-width: 1100px) {
         flex:1;
         margin: 1rem;
     }
@@ -286,6 +329,10 @@ const ProfileConnectionsContainer = styled.footer`
         padding: 1rem;
         flex-direction: column;
     }
+    @media (max-width: 1100px) {
+        padding: 1rem;
+        flex-direction: column;
+    }
 `
 const ProfileConnection = styled.div`
     display: flex;
@@ -300,9 +347,14 @@ const ProfileConnection = styled.div`
        align-content: flex-end;
        justify-content: flex-start;
        text-align: right;
-       margin-right: 1em;
-       
-       
+       margin-right: 1em;  
+    }
+    @media (max-width: 1100px) {
+       align-self: flex-end;
+       align-content: flex-end;
+       justify-content: flex-start;
+       text-align: right;
+       margin-right: 1em;  
     }
 `
 
@@ -335,7 +387,17 @@ const FormLabel = styled.label`
     color: #596f85;
     display: flex;
     justify-content: flex-start;
+`
 
+const FormButton = styled.input`
+    margin: 1rem;
+    border-radius: 15%;
+    border: 1px solid #596f85;
+    &:hover{
+        background-color: rgba(0,0,0,0.6);
+        color: #fff;
+    }
+    
 `
 
 
@@ -445,12 +507,14 @@ class JeffDevSite extends React.Component{
                         <Avatar
                             src={profile}
                         />
+                        <div className={'bioStatement'}>
                         <p style={{fontSize: 20, textShadow: '2px 1px black', marginLeft: '2rem', alignSelf: 'flex-start', color:'#fff', fontFamily:'Quantico, sans-serif'
 
                         }}><strong>Jeff Molter</strong> </p>
                         <p style={{fontSize: 20, textShadow: '2px 1px black', marginLeft: '2rem', marginTop: -20, alignSelf: 'flex-start', color:'#fff', fontFamily:'Quantico, sans-serif', paddingRight: 5,
 
                         }}><strong>Full-Stack Developer</strong></p>
+                        </div>
                     </ProfilePicContainer>
                     <ProfileSummaryContainer>
 
@@ -484,9 +548,10 @@ class JeffDevSite extends React.Component{
                     <div style={{display:'flex', flexDirection: 'column', justifyContent:'center', alignItems: 'center', backgroundColor:'rgba(250,250,250,0.6)', padding: 10}}>
                         {!this.state.showIntroSection
                             ?(
-                                <p style={{paddingTop: 10}}>
-                                    Developer: React & React Native, GraphQL, Python, AWS
+                                <p style={{padding: 10, textAlign:'center'}}>
+                                    Developer: <br/> React & React Native, GraphQL, Python, AWS
                                 </p>
+
                             )
                             :(null)
                         }
@@ -524,7 +589,7 @@ class JeffDevSite extends React.Component{
                         id={'slider'}
                         className={(this.state.showIntroSection ? 'slide-in' : 'slide-out')}
                         style={{
-                            display: (this.state.showIntroSection === false ? 'none' : 'flex')
+                            display: (!this.state.showIntroSection ? 'none' : 'flex')
                         }}
                         ref={this.aboutRef}
                     >
@@ -562,18 +627,7 @@ class JeffDevSite extends React.Component{
                         <ProjectCardContainer>
                             { /*********  The Elephant Tree ************/}
                             <CardContainer>
-                                {/*<ModalController*/}
-                                    {/*buttonLabel={'View Site'}*/}
-                                    {/*backColor={'black'}*/}
-                                {/*>*/}
-                                    {/*<video*/}
-                                        {/*src={'http://www.theElephantTree.org'}*/}
-                                        {/*style={{*/}
-                                            {/*height:'100%',*/}
-                                            {/*width:'100%',*/}
-                                        {/*}}*/}
-                                    {/*/>*/}
-                                {/*</ModalController>*/}
+                              <div style={{height: 29}}/>
                                 <ProjectCardComponent
                                     style={{zIndex:-1}}
                                     title={'The Elephant Tree'}
@@ -581,7 +635,7 @@ class JeffDevSite extends React.Component{
                                     projectImage={elephantTree}
                                     projectType={'Yoga/Mindfulness Business Static Website'}
                                     projectLink={
-                                        <a href={'http://www.theElephantTree.org'}>http://www.theElephantTree.org</a>
+                                        <a target="_blank" rel="noopener noreferrer" href={'http://www.theElephantTree.org'}>http://www.theElephantTree.org</a>
                                     }
                                     featureList={
                                         [
@@ -678,7 +732,7 @@ class JeffDevSite extends React.Component{
                                     backTitle={'Features'}
                                     projectImage={MiamiOHFit_Home}
                                     projectType={'Fitness Program Management React Native App'}
-                                    backImageSize={'33%'}
+                                    backImageSize={'contain'}
                                     backColor={'#fff'}
                                     featureList={
                                         [
@@ -1086,8 +1140,8 @@ class JeffDevSite extends React.Component{
                                 <FormContainer>
                                     <div style={{width: '100%', flexDirection:'row', display:'flex', justifyContent:'center'}}>
                                         <div className="actions">
-                                            <input style={{margin: '1rem', borderRadius: '15%', border: '1px solid #596f85'}} type="submit" value="Send Message" className="special" />
-                                            <input style={{margin: '1rem', borderRadius: '15%', border: '1px solid #596f85'}}  type="reset" value="Clear" />
+                                            <FormButton  type="submit" value="Send Message" className="special" />
+                                            <FormButton  type="reset" value="Clear" />
                                         </div>
                                     </div>
                                 </FormContainer>

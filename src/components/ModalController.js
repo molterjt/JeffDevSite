@@ -18,7 +18,7 @@ export default class ModalController extends React.Component{
             <div style={{width: '100%'}}>
                 <button
                     type={'button'}
-                   className={'modal-button'}
+                    className={'modal-button'}
                     onClick={() => this.toggleModal()}
                 >
                     {this.props.buttonLabel}
