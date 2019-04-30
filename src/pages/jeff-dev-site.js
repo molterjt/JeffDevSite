@@ -1,4 +1,6 @@
 import React from "react"
+import IosArrowDropupCircle from 'react-ionicons/lib/IosArrowDropupCircle'
+import IosArrowDropdownCircle from 'react-ionicons/lib/IosArrowDropdownCircle'
 import "../style/jeff-dev-site.css";
 import styled from "@emotion/styled"
 
@@ -13,6 +15,9 @@ import profile from '../images/Jeff_Kofenya.jpg';
 import elephantTree from '../images/theelephanttree.png';
 import LinkedIn from '../images/LinkedInLogo.png';
 import whiteInsta from '../images/white-insta.png';
+import whiteBG from '../images/white-background.jpg';
+
+
 
 /******** MiamiOH_Fit *************/
 import MiamiOHFit_Home from '../images/MiamiOHFit_Mobile/MiamiOHFit_homeScreen.png';
@@ -42,7 +47,6 @@ import Tasked_Complete from '../images/Tasked/Tasked_TaskComplete.png';
 
 /******** Member_Map *************/
 import FitnessMemMap from '../images/MemberMap/FitnessMembershipMap2.png';
-//import MM_Full from '../images/MemberMap/MM_Full.png';
 import MM_Zoom from '../images/MemberMap/MM_Zoom.png';
 import MM_Recording from '../images/MemberMap/ProgramMapVideo.mp4';
 
@@ -92,8 +96,10 @@ const NavItem = styled.div`
     text-align: center;
     border: 1px solid black;
     cursor: pointer;
-    &: hover{
-        background-color: rgba(50,90,50,0.4);
+    &:hover{
+            transition: all 0.3s ease 0s;
+            background: linear-gradient(90deg, rgba(250, 250, 250, 0.4), rgba(0, 0, 0, 0.5));
+            // background-color: rgba(50,90,50,0.4);
       
     } 
 `
@@ -127,12 +133,32 @@ const RightContentContainer = styled.div`
     align-content: center;
     justify-content: space-evenly;
     overflow: auto;
-    background-color: rgba(0,0,0,0.8);
+    // background-color: rgba(0,0,0,0.8);
+    
+    background-image: url( ${ whiteBG } );
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    
      @media (max-width: 700px) {
         height: auto;
         overflow: hidden;
-        
-      
+        background: linear-gradient(
+            135deg, 
+            rgba(250, 250, 250, 1) 5%,
+            rgba(89, 89, 89, 1) 16%,
+            rgba(250, 250, 250, 0.6) 20%,
+            rgba(89, 89, 89, 1) 27%,
+            rgba(89, 89, 89, 1) 27%,
+            rgba(250, 250, 250, 0.4) 35%,
+            rgba(44, 44, 44, 1) 50%,
+            rgba(17, 17, 17, 1) 60%,
+            rgba(0, 0, 0, 1) 65%,
+            rgba(250, 250, 250, 0.4) 71%,
+            rgba(43, 43, 43, 1) 76%,
+            rgba(28, 28, 28, 1) 80%,
+            rgba(19, 19, 19, 1) 100%);
+}
     }
 `
 
@@ -140,7 +166,7 @@ const SectionTitle = styled.h3`
     text-align: left;
     margin: 1rem;
     padding 1rem;
-    color: #A5A4A6;
+    color: #596f85;
     font-family:  "Quantico", sans-serif;
     font-size: 18px; 
 `
@@ -151,10 +177,40 @@ const IntroSection = styled.section`
     justify-content: flex-start;
     flex-direction: column;
     padding: 1rem;
-    color: #fff;
+    color: black;
     font-family:  Courier, sans-serif;
     font-size: 18px;
+   //background-color: rgba(250,250,250,0.6);
+    transition: all 1s ease-in-out;
+    //transform:  translate(0px, 0px, 0);
 `
+
+const RecentWorkSection = styled.section`
+    display: flex;
+    flex-direction: column;
+    // justify-content: flex-start;
+    height: auto;
+    background-color: rgba(250,250,250,0.6);
+`
+const ContactSection = styled.section`
+    display: flex;
+    flex:1;
+    justify-content: center;
+    flex-direction:column;
+    overflow: auto;
+    background-color: rgba(250,250,250,0.6);
+`
+
+const SectionBreak = styled.div`
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align:center;
+    color: #A5A4A6;
+    padding: 20px;
+    background-color: rgba(250,250,250,0.6);
+`
+
 const ProfilePicContainer = styled.div`
     display: flex;
     flex: 1;
@@ -170,7 +226,6 @@ const ProfilePicContainer = styled.div`
   
 `
 const Avatar = styled.img`
- 
   flex-grow:0;
   flex-shrink:0;
   flex-basis:100px;
@@ -185,6 +240,14 @@ const Avatar = styled.img`
   @media (max-width: 700px) {
         height: 140px;
         width: 130px;
+        &:active{
+            transition: all 0.5s ease;
+            transform:  translate3d( 100px, 100px, 0) scale(2.5);
+  }
+  }
+  &:active{
+    transition: all 0.5s ease;
+    transform:  translate3d( 20px, 100px, 0) scale(2.5);
   }
 `
 
@@ -242,12 +305,7 @@ const ProfileConnection = styled.div`
        
     }
 `
-const RecentWorkSection = styled.section`
-    display: flex;
-    flex-direction: column;
-    // justify-content: flex-start;
-    height: auto;
-`
+
 const ProjectCardContainer = styled.div`
     display: flex;
     flex-direction: row;
@@ -267,27 +325,19 @@ const FormContainer = styled.div`
     margin: 1em;
     flex: auto;
     height: 100%;
-
     font-family:  Courier, sans-serif;
     font-size: 14px;
     
 `
-const ContactSection = styled.section`
+
+const FormLabel = styled.label`
+    font-weight: bold;
+    color: #596f85;
     display: flex;
-    flex:1;
-    justify-content: center;
-    flex-direction:column;
-    overflow: auto;
+    justify-content: flex-start;
+
 `
 
-const SectionBreak = styled.div`
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    text-align:center;
-    color: #A5A4A6;
-    margin: 20px;
-`
 
 const CardContainer = styled.div`
     flex-direction: column;
@@ -342,11 +392,12 @@ const ProjectModalSection = styled.div`
         flex-direction: column;
     }  
 `
-const ProjectModalSectionText = styled.p`
+const ProjectModalSectionText = styled.li`
     margin-left: 20px;
     color: #850f0d;
     font-family: Quantico, sans-serif;
     font-size: 14px;
+     list-style-type: square;
     
 `
 const ProjectModalTitleHeader = styled.h2`
@@ -374,11 +425,16 @@ const ProjectModalSummary = styled.div`
 class JeffDevSite extends React.Component{
     constructor(){
         super();
+        this.state = {
+            showIntroSection: null,
+        }
         this.aboutRef = React.createRef();
         this.projectsRef = React.createRef();
         this.connectRef = React.createRef();
     }
+    componentDidMount(){this.setState({showIntroSection: false})}
     scrollToMyRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+    toggleIntroSection = () => {this.setState({showIntroSection: !this.state.showIntroSection})}
     render(){
         return(
             <TopLevelContainer>
@@ -392,11 +448,9 @@ class JeffDevSite extends React.Component{
                         <p style={{fontSize: 20, textShadow: '2px 1px black', marginLeft: '2rem', alignSelf: 'flex-start', color:'#fff', fontFamily:'Quantico, sans-serif'
 
                         }}><strong>Jeff Molter</strong> </p>
-                        <p style={{fontSize: 20, textShadow: '2px 1px black', marginLeft: '2rem', marginTop: -20, alignSelf: 'flex-start', color:'#fff', fontFamily:'Quantico, sans-serif'
+                        <p style={{fontSize: 20, textShadow: '2px 1px black', marginLeft: '2rem', marginTop: -20, alignSelf: 'flex-start', color:'#fff', fontFamily:'Quantico, sans-serif', paddingRight: 5,
 
                         }}><strong>Full-Stack Developer</strong></p>
-
-
                     </ProfilePicContainer>
                     <ProfileSummaryContainer>
 
@@ -425,20 +479,66 @@ class JeffDevSite extends React.Component{
                         <NavItem onClick={() => this.scrollToMyRef(this.projectsRef) }>Projects</NavItem>
                         <NavItem onClick={() => this.scrollToMyRef(this.connectRef) }>Connect</NavItem>
                     </NavContainer>
-                    <IntroSection ref={this.aboutRef}>
-                        <SectionTitle>About</SectionTitle>
+
+                    <div style={{display:'flex', flexDirection: 'column', justifyContent:'center', alignItems: 'center', backgroundColor:'rgba(250,250,250,0.6)', padding: 10}}>
+                        {!this.state.showIntroSection
+                            ?(
+                                <p style={{paddingTop: 10}}>
+                                    Developer: React & React Native, GraphQL, Python, AWS
+                                </p>
+                            )
+                            :(null)
+                        }
+                    </div>
+                    <div style={{display:'flex', justifyContent:'center', alignItems: 'center', backgroundColor:'rgba(250,250,250,0.6)', padding:10}}>
+                        {this.state.showIntroSection
+                            ?(
+                                <div style={{display:'flex', flexDirection: 'column', justifyContent:'center', alignItems: 'center',}}>
+                                    <p style={{margin:-1, color:'#596f85'}}>Less Was Better</p>
+                                    <IosArrowDropupCircle
+                                        onClick={() => this.toggleIntroSection()}
+                                        fontSize="40px"
+                                        color={"#43853d"}
+                                        style={{
+                                            cursor:'pointer',
+                                        }}
+                                    />
+                                </div>
+                            )
+                            :(
+                                <div style={{display:'flex', flexDirection: 'column', justifyContent:'center', alignItems: 'center',}}>
+                                    <p style={{margin:-1, color:'#596f85'}}>More About Me</p>
+                                    <IosArrowDropdownCircle
+                                        onClick={() => this.toggleIntroSection()}
+                                        fontSize="40px"
+                                        color={"#43853d"}
+                                        style={{cursor:'pointer'}}
+                                    />
+                                </div>
+                            )
+                        }
+                    </div>
+
+                    <IntroSection
+                        id={'slider'}
+                        className={(this.state.showIntroSection ? 'slide-in' : 'slide-out')}
+                        style={{
+                            display: (this.state.showIntroSection === false ? 'none' : 'flex')
+                        }}
+                        ref={this.aboutRef}
+                    >
+
                         <p>
-                            Greetings,
+                            I am a full-stack developer with a focus and appreciation for the React & React Native frameworks.
+                            On the backend I have found the GraphQL and server-less infrastructure to a be fascinating and powerful model.
+                            I also enjoy working with Python and its extensive libraries, while most of my academic programming was completed with Java and C++.
+                        </p>
+
+                        <p>
+                            With a passion for learning and acquiring new information, I am open to exploring new technologies as I continue grow and sharpen my skills.
                         </p>
                         <p>
-                            I am a full-stack developer with a focus and appreciation for the React & React Native frameworks with back-end support with GraphQL and server-less infrastructure.
-                            Additionally, I enjoy working with Python and its extensive libraries.  Most of my academic programming was completed with Java and C++.
-                        </p>
-                        <p>
-                            However, one of my greatest strengths and hobbies is learning - so I am always open for exploring new technologies as I continue grow and sharpen my skills.
-                        </p>
-                        <p>
-                            Time outside of working on becoming a better developer is focused on Brazilian Jiu-Jitsu, strength training, traveling, and enjoying the great outdoors.
+                            Outside of the development world, I enjoy practicing Brazilian Jiu-Jitsu, strength training, traveling, learning, and enjoying the great outdoors.
                         </p>
                         <p>
                             If you would like to work together, let's get connected!
@@ -449,8 +549,11 @@ class JeffDevSite extends React.Component{
                         <p>
                             Jeff
                         </p>
+
                     </IntroSection>
                     <SectionBreak>___</SectionBreak>
+
+
 
                     <RecentWorkSection ref={this.projectsRef}>
                         <SectionTitle>Recent Projects</SectionTitle>
@@ -526,30 +629,30 @@ class JeffDevSite extends React.Component{
 
                                                 <h5 style={{textDecoration: 'underline', alignSelf:'flex-start'}}>Technology</h5>
                                                 <div style={{textAlign: 'left', justifyContent:'space-between', flexDirection:'row', display:'flex', flexWrap:'wrap'}}>
-                                                    <ProjectModalSectionText>-React Native</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>-Expo</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>-GraphQL</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>-Apollo Client</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>-GraphCool BaaS</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>React Native</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Expo</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>GraphQL</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Apollo Client</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>GraphCool BaaS</ProjectModalSectionText>
                                                 </div>
 
                                                 <h5 style={{textDecoration: 'underline',  alignSelf:'flex-start'}}>Availability</h5>
                                                 <div style={{textAlign: 'left',  justifyContent:'flex-start', alignItems: 'flex-start', flexDirection:'row', display:'flex'}}>
-                                                    <ProjectModalSectionText>-iOS</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>-Android</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>iOS</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Android</ProjectModalSectionText>
                                                 </div>
 
                                                 <h5 style={{textDecoration: 'underline',  alignSelf:'flex-start'}}>Screens:</h5>
                                                 <div style={{padding: 5, textAlign: 'left', justifyContent: 'flex-start',  flexWrap:'wrap', flexDirection:'row', display:'flex'}}>
-                                                    <ProjectModalSectionText>-Login/Registration</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>-Home</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>-Workouts/Exercises</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>-Group Fit Schedule</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>-Programs & Registration</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>-Events</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>-Trainers/Instructors</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>-Facility Maps</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>-Profile/Settings</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Login/Registration</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Home</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Workouts/Exercises</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Group Fit Schedule</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Programs & Registration</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Events</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Trainers/Instructors</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Facility Maps</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Profile/Settings</ProjectModalSectionText>
                                                 </div>
                                             </div>
                                         </ProjectModalSection>
@@ -640,13 +743,13 @@ class JeffDevSite extends React.Component{
 
                                                 <h5 style={{textDecoration: 'underline', alignSelf:'flex-start'}}>Technology</h5>
                                                 <div style={{textAlign: 'left', justifyContent:'space-evenly', flexDirection:'row', display:'flex', flexWrap:'wrap'}}>
-                                                    <ProjectModalSectionText>-React</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>-GraphQL</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>-Apollo-Client</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>-GraphCool BaaS</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>-AWS-Amplify</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>-React-Router-Dom</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>-React-Bootstrap</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>React</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>GraphQL</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Apollo-Client</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>GraphCool BaaS</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>AWS-Amplify</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>React-Router-Dom</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>React-Bootstrap</ProjectModalSectionText>
                                                 </div>
                                             </div>
                                         </ProjectModalSection>
@@ -730,10 +833,10 @@ class JeffDevSite extends React.Component{
 
                                                 <h5 style={{textDecoration: 'underline', alignSelf:'flex-start'}}>Technology</h5>
                                                 <div style={{textAlign: 'left', justifyContent:'space-evenly', flexDirection:'row', display:'flex', flexWrap:'wrap'}}>
-                                                    <ProjectModalSectionText>-React</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>-Redux</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>-React-Redux</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>-Material Design BootStrap-React</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>React</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Redux</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>React-Redux</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Material Design BootStrap-React</ProjectModalSectionText>
                                                 </div>
                                             </div>
                                         </ProjectModalSection>
@@ -815,9 +918,9 @@ class JeffDevSite extends React.Component{
 
                                                 <h5 style={{textDecoration: 'underline', alignSelf:'flex-start'}}>Technology</h5>
                                                 <div style={{textAlign: 'left', justifyContent:'space-evenly', flexDirection:'row', display:'flex', flexWrap:'wrap'}}>
-                                                    <ProjectModalSectionText>- React</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>- Material Design BootStrap-React</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>- CSS</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>React</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Material Design BootStrap-React</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>CSS</ProjectModalSectionText>
                                                 </div>
                                             </div>
                                         </ProjectModalSection>
@@ -902,12 +1005,12 @@ class JeffDevSite extends React.Component{
 
                                                 <h5 style={{textDecoration: 'underline', alignSelf:'flex-start'}}>Technology</h5>
                                                 <div style={{textAlign: 'left', justifyContent:'space-evenly', flexDirection:'row', display:'flex', flexWrap:'wrap'}}>
-                                                    <ProjectModalSectionText>- React</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>- React-Map-GL & MapBox</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>- Python</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>- GeoPy-GeoCoder</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>- Jupyter Notebook</ProjectModalSectionText>
-                                                    <ProjectModalSectionText>- NumPy & Pandas</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>React</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>React-Map-GL & MapBox</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Python</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>GeoPy-GeoCoder</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Jupyter Notebook</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>NumPy & Pandas</ProjectModalSectionText>
                                                 </div>
                                             </div>
                                         </ProjectModalSection>
@@ -943,6 +1046,12 @@ class JeffDevSite extends React.Component{
                         </ProjectCardContainer>
                     </RecentWorkSection>
                     <SectionBreak>___</SectionBreak>
+
+
+
+
+
+
                     <ContactSection ref={this.connectRef}>
                         <SectionTitle>Get Connected</SectionTitle>
 
@@ -951,34 +1060,33 @@ class JeffDevSite extends React.Component{
                             name="contact"
                             data-netlify="true"
                             data-netlify-honeypot="bot-field"
-                            style={{border: '1px solid #A5A4A6', margin: 15}}
+                            style={{border: '1px solid #596f85', margin: 15}}
                         >
                             <div style={{display: 'flex', flexDirection:'row', flexWrap:'wrap', justifyContent:'space-between'}}>
                                 <FormContainer>
                                     <div style={{width: '100%', padding:10, }}>
                                         <input type="hidden" name="bot-field" />
                                         <input type="hidden" name="form-name" value="contact" />
-                                        <label  style={{color: '#A5A4A6', display:'flex', justifyContent:'flex-start'}} htmlFor="name">Name</label>
-                                        <input  style={{ width: '75%'}} type="text" name="name" id="name" />
+                                        <FormLabel htmlFor="name">Name</FormLabel>
+                                        <input style={{ width: '75%', border: '1px solid #596f85'}} type="text" name="name" id="name" />
                                     </div>
 
                                     <div style={{width: '100%',  padding:10,}}>
-                                        <label  style={{color: '#A5A4A6',display:'flex', justifyContent:'flex-start'}} htmlFor="email">Email</label>
-                                        <input style={{width: '75%'}} type="text" name="email" id="email" />
+                                        <FormLabel htmlFor="email">Email</FormLabel>
+                                        <input style={{width: '75%', border: '1px solid #596f85'}} type="text" name="email" id="email" />
                                     </div>
                                 </FormContainer>
                                 <FormContainer>
                                     <div style={{width: '100%', padding:10,}}>
-                                        <label style={{color: '#A5A4A6', display:'flex', justifyContent:'flex-start'}} htmlFor="message">Message</label>
-                                        <textarea  style={{width:'95%'}} name="message" id="message" rows="10" />
+                                        <FormLabel htmlFor="message">Message</FormLabel>
+                                        <textarea  style={{width:'95%', border: '1px solid #596f85'}} name="message" id="message" rows="10" />
                                     </div>
                                 </FormContainer>
                                 <FormContainer>
                                     <div style={{width: '100%', flexDirection:'row', display:'flex', justifyContent:'center'}}>
                                         <div className="actions">
-
-                                            <input style={{margin: '1rem', borderRadius: '15%'}} type="submit" value="Send Message" className="special" />
-                                            <input style={{margin: '1rem', borderRadius: '15%'}}  type="reset" value="Clear" />
+                                            <input style={{margin: '1rem', borderRadius: '15%', border: '1px solid #596f85'}} type="submit" value="Send Message" className="special" />
+                                            <input style={{margin: '1rem', borderRadius: '15%', border: '1px solid #596f85'}}  type="reset" value="Clear" />
                                         </div>
                                     </div>
                                 </FormContainer>
@@ -993,15 +1101,16 @@ class JeffDevSite extends React.Component{
                         display: 'flex',
                         position: 'relative',
                         bottom: 0,
-                        right: 20,
-                        color: '#A5A4A6',
+                        right: 0,
+                        paddingRight: 10,
+                        color: '#596f85',
                         padding: 5,
-
+                        backgroundColor: 'rgba(250,250,250,0.6)'
 
                     }}>
                         © {new Date().getFullYear()}, Built with
                         {` `}
-                        <a href="https://www.gatsbyjs.org" style={{marginLeft: 7}}>Gatsby</a>
+                        <a href="https://www.gatsbyjs.org" style={{marginLeft: 7, color: '#596f85'}}>Gatsby</a>
                     </footer>
 
                 </RightContentContainer>

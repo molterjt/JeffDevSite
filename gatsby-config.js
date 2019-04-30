@@ -28,6 +28,20 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+        resolve: `gatsby-plugin-manifest`,
+        options: {
+            name: "Jeff Molter",
+            short_name: "Jeff_Molter",
+            start_url: "/",
+            background_color: "#0d8a76",
+            theme_color: "#0d8a76",
+            // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+            // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+            display: "standalone",
+            icon: "src/images/icon.png", // This path is relative to the root of the site.
+        },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

@@ -73,7 +73,8 @@ const ProjectSummary = styled.div`
 const ProjectFeature = styled.li`
     color: #850f0d;
     font-size: 14px;
-    font-family: Quantico, sans-serif;
+    font-family: 'Quantico', sans-serif;
+    list-style-type: square;
 `
 
 const ProjectCardComponent = (props) =>
