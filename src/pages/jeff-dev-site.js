@@ -17,6 +17,16 @@ import LinkedIn from '../images/LinkedInLogo.png';
 import whiteInsta from '../images/white-insta.png';
 import whiteBG from '../images/white-background.jpg';
 
+/******** SomaCheckIn *************/
+
+import MenuDrawerSoma from '../images/SomaCheckIn/DrawerMenu.png';
+import HomeScreenSoma from '../images/SomaCheckIn/HomeScreen.png';
+import EditProfileSoma from '../images/SomaCheckIn/EditProfile.png';
+import EventsSoma from '../images/SomaCheckIn/EventScreen.png'
+import CheckInSoma from '../images/SomaCheckIn/CheckInScreen.png'
+import UserCheckInSoma from '../images/SomaCheckIn/UserCheckin.png'
+import FullRosterSoma from '../images/SomaCheckIn/FullRoster.png';
+import ProfileScreenSoma from '../images/SomaCheckIn/ProfileScreenSoma.png';
 
 
 /******** MiamiOH_Fit *************/
@@ -366,6 +376,7 @@ const ProjectCardContainer = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+    
 `
 
 const FormContainer = styled.div`
@@ -625,6 +636,110 @@ class JeffDevSite extends React.Component{
                         <SectionTitle>Recent Projects</SectionTitle>
 
                         <ProjectCardContainer>
+                            {/*********  Soma BJJ Checkin *************/}
+                            <CardContainer>
+                                <ModalController
+                                    buttonLabel={'Learn More'}
+                                    backColor={'rgba(0,0,0,0.8)'}
+                                >
+                                    <ProjectCardModalContainer>
+
+                                        <ProjectModalTitleHeader>Soma Jiu-Jitsu Academies</ProjectModalTitleHeader>
+                                        <div style={{
+                                            height: 500,
+                                            width: '100%',
+                                            flexDirection:'column',
+                                            alignItems: 'center',
+                                            justifyContent:'center',
+                                            backgroundImage: `url(${HomeScreenSoma})`,
+                                            backgroundRepeat:'no-repeat',
+                                            backgroundSize: 'contain',
+                                            backgroundPosition:'center',
+                                            backgroundColor: 'rgba(0,0,0,0.8)',
+                                            border: '3px groove black',
+
+                                        }}/>
+
+                                        <ProjectModalSummary>
+                                            <p>A mobile application designed to manage multiple Brazilian Jiu-Jitsu academies; focus on user check-in, roster management, events & announcements, and curriculmn sharing.</p>
+                                            <p>The project is still in design phase.  Will be released on both iOS and Android platforms.</p>
+                                        </ProjectModalSummary>
+
+                                        <ProjectModalSection >
+                                            <div style={{
+                                                backgroundImage: `url(${MenuDrawerSoma})`,
+                                                backgroundSize: 'contain',
+                                                backgroundRepeat: 'no-repeat',
+                                                backgroundPosition: 'center',
+                                                height: 500,
+                                                width: '50%',
+                                                textAlign:'right',
+                                            }}
+                                            >
+                                            </div>
+                                            <div style={{width: '50%', flexDirection:'column', display:'flex', marginTop: 10, marginRight:20}}>
+
+                                                <h5 style={{textDecoration: 'underline', alignSelf:'flex-start'}}>Technology</h5>
+                                                <div style={{textAlign: 'left', justifyContent:'space-between', flexDirection:'row', display:'flex', flexWrap:'wrap'}}>
+                                                    <ProjectModalSectionText>React Native</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Expo</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Prisma-GraphQL</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>PostgreSQL</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Apollo Client</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Json Web Tokens</ProjectModalSectionText>
+                                                </div>
+
+                                                <h5 style={{textDecoration: 'underline',  alignSelf:'flex-start'}}>Availability</h5>
+                                                <div style={{textAlign: 'left',  justifyContent:'flex-start', alignItems: 'flex-start', flexDirection:'row', display:'flex'}}>
+                                                    <ProjectModalSectionText>Still under development</ProjectModalSectionText>
+                                                </div>
+
+                                                <h5 style={{textDecoration: 'underline',  alignSelf:'flex-start'}}>Screens:</h5>
+                                                <div style={{padding: 5, textAlign: 'left', justifyContent: 'flex-start',  flexWrap:'wrap', flexDirection:'row', display:'flex'}}>
+                                                    <ProjectModalSectionText>Login/Registration</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Home/Check-In</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Profile</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Schedules</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Roster/Check-In</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Events</ProjectModalSectionText>
+                                                    <ProjectModalSectionText>Instructors</ProjectModalSectionText>
+                                                </div>
+                                            </div>
+                                        </ProjectModalSection>
+
+                                        <ProjectModalSection>
+                                            <Gallery images={[
+                                                MenuDrawerSoma,
+                                                HomeScreenSoma,
+                                                ProfileScreenSoma,
+                                                CheckInSoma,
+                                                UserCheckInSoma,
+                                                FullRosterSoma,
+                                                EditProfileSoma,
+                                                EventsSoma,
+                                            ]}/>
+                                        </ProjectModalSection>
+                                    </ProjectCardModalContainer>
+                                </ModalController>
+                                <ProjectCardComponent
+                                    style={{zIndex:-1}}
+                                    title={'Soma Jiu-Jitsu Academies'}
+                                    backTitle={'Features'}
+                                    projectImage={MenuDrawerSoma}
+                                    projectType={'Academy Management & Check-In React Native App'}
+                                    backImageSize={'contain'}
+                                    backColor={'#fff'}
+                                    featureList={
+                                        [
+                                            {'name': 'React Native, Expo, Prisma-GraphQL, Apollo-Client, PostgreSQL'},
+                                            {'name': 'Registration & User Persistence'},
+                                            {'name': 'Json-Web-Token Authentication & Authorization'},
+                                            {'name': 'Prisma Data Model'},
+                                            {'name': 'GraphQL Schema Design with Custom Query & Mutation Resolvers'},
+                                        ]
+                                    }
+                                />
+                            </CardContainer>
                             { /*********  The Elephant Tree ************/}
                             <CardContainer>
                               <div style={{height: 29}}/>

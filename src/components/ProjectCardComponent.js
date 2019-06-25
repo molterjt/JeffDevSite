@@ -56,14 +56,33 @@ const ProjectImageContainer =  styled.div`
    
 `
 
+// const ProjectSummary = styled.div`
+//     display: flex;
+//     flex:1;
+//     width:100%;
+//     height: auto;
+//     align-content: flex-start;
+//     align-items: center;
+//     justify-content: space-around;
+//     text-align: left;
+//     padding: 5px;
+//     margin-top: 20px;
+//     overflow: auto;
+//      @media (max-width: 450px) {
+//         padding: 10px;
+//         padding-top: 180px;
+//      }
+//
+// `
+
 const ProjectSummary = styled.div`
     display: flex;
-    flex:1;
+ 
     width:100%;
     height: auto;
     align-content: flex-start;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     text-align: left;
     padding: 5px;
     margin-top: 20px;
@@ -74,6 +93,7 @@ const ProjectSummary = styled.div`
      }
     
 `
+
 const ProjectFeature = styled.li`
     // color: #850f0d;
     color: #596f85;
@@ -102,11 +122,11 @@ const ProjectCardComponent = (props) =>
             <div className={"back"}>
                 <ProjectCardTitleHeader>{props.backTitle}</ProjectCardTitleHeader>
                 <ProjectSummary>
-                        <ul style={{textAlign: 'left', paddingLeft: 15}}>
+                        <ul style={{textAlign: 'left', paddingLeft: 15, paddingTop: 30}}>
                             {props.featureList
                                 ?(
                                     props.featureList.map((feature, index) => (
-                                        <ProjectFeature>
+                                        <ProjectFeature key={index}>
                                             {feature.name}
                                         </ProjectFeature>
                                     ))
@@ -116,7 +136,6 @@ const ProjectCardComponent = (props) =>
                             }
                         </ul>
                 </ProjectSummary>
-
 
                         {props.projectLink ? props.projectLink : null}
 
