@@ -27,6 +27,7 @@ import CheckInSoma from '../images/SomaCheckIn/CheckInScreen.png'
 import UserCheckInSoma from '../images/SomaCheckIn/UserCheckin.png'
 import FullRosterSoma from '../images/SomaCheckIn/FullRoster.png';
 import ProfileScreenSoma from '../images/SomaCheckIn/ProfileScreenSoma.png';
+import SomaCheckInDisplay from '../images/SomaCheckIn/SomaJJCheckIn.png';
 
 
 /******** MiamiOH_Fit *************/
@@ -371,7 +372,7 @@ const ProfileConnection = styled.div`
 const ProjectCardContainer = styled.div`
     display: flex;
     flex-direction: row;
-    // flex: 1;
+    flex: 1;
     padding: 1rem;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -416,8 +417,9 @@ const CardContainer = styled.div`
     flex-direction: column;
     width: 45%;
     height: auto;
-    min-height: 300px;
-    margin: 1rem;
+    
+   
+    margin-bottom: 180px;
     display: flex;
     @media (max-width: 1100px) {
        width: 70%;
@@ -646,12 +648,12 @@ class JeffDevSite extends React.Component{
 
                                         <ProjectModalTitleHeader>Soma Jiu-Jitsu Academies</ProjectModalTitleHeader>
                                         <div style={{
-                                            height: 500,
+                                            height: 600,
                                             width: '100%',
                                             flexDirection:'column',
                                             alignItems: 'center',
                                             justifyContent:'center',
-                                            backgroundImage: `url(${HomeScreenSoma})`,
+                                            backgroundImage: `url(${SomaCheckInDisplay})`,
                                             backgroundRepeat:'no-repeat',
                                             backgroundSize: 'contain',
                                             backgroundPosition:'center',
@@ -725,10 +727,10 @@ class JeffDevSite extends React.Component{
                                     style={{zIndex:-1}}
                                     title={'Soma Jiu-Jitsu Academies'}
                                     backTitle={'Features'}
-                                    projectImage={MenuDrawerSoma}
+                                    projectImage={SomaCheckInDisplay}
                                     projectType={'Academy Management & Check-In React Native App'}
                                     backImageSize={'contain'}
-                                    backColor={'#fff'}
+                                    backColor={'#3E4570'}
                                     featureList={
                                         [
                                             {'name': 'React Native, Expo, Prisma-GraphQL, Apollo-Client, PostgreSQL'},

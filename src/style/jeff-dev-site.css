@@ -221,11 +221,12 @@
 /******* Project Cards *********/
 .card-container {
     display: flex;
-    flex: auto ;
-    /*min-height: 300px;*/
-    height: auto;
+    flex: auto;
+    min-height: 300px;
+    max-height: 400px;
+    height: 300px;
     /*width: 100%;*/
-    /*margin: 1rem;*/
+    /*margin: 5rem;*/
    
 }
 
