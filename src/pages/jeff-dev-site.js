@@ -609,7 +609,7 @@ class JeffDevSite extends React.Component{
 
                         <p>
                             I am a full-stack developer with a focus and appreciation for the React & React Native frameworks.
-                            On the backend I have found the GraphQL and server-less infrastructure to a be fascinating and powerful model.
+                            On the backend I have found the GraphQL and server-less infrastructure to be a fascinating and powerful model.
                             I also enjoy working with Python and its extensive libraries, while most of my academic programming was completed with Java and C++.
                         </p>
 
