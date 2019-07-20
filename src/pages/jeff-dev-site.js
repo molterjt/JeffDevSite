@@ -259,9 +259,9 @@ const SectionBreak = styled.div`
 const ProfilePicContainer = styled.div`
     display: flex;
     flex: 1;
-    margin-top: 1rem;
-    align-content: center;
-    align-items: flex-start;
+    margin-top: 0rem;
+    align-content: baseline;
+    align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     margin: 10px;
@@ -303,7 +303,7 @@ const Avatar = styled.img`
 
 const ProfileSummaryContainer = styled.div `
     display: flex;
-    flex: 2;
+    flex: 1;
     margin: 0;
     width: 100%;
     align-content: flex-start;
@@ -322,6 +322,35 @@ const ProfileSummaryContainer = styled.div `
         margin: 1rem;
     }
     
+`
+
+const BioStatement = styled.div`
+    display: flex;
+    margin-top: 2rem;
+    margin: 1rem;
+    flex:1;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+    justify-content: space-evenly;
+    text-align: top;
+    position: absolute;
+    top: 20; 
+    
+    @media (max-width: 700px) {
+        padding: 1rem;
+        flex-direction: column;
+        text-align:bottom
+        position: absolute;
+         bottom:0; 
+    }
+    @media (max-width: 1100px) {
+        padding: 1rem;
+        flex-direction: column;
+        text-align:bottom
+        position: absolute;
+         bottom:0; 
+    }
 `
 
 const ProfileConnectionsContainer = styled.footer`
@@ -517,21 +546,18 @@ class JeffDevSite extends React.Component{
                 <LeftProfileContainer>
 
                     <ProfilePicContainer>
-                        <Avatar
-                            src={profile}
-                        />
-                        <div className={'bioStatement'}>
-                        <p style={{fontSize: 20, textShadow: '2px 1px black', marginLeft: '2rem', alignSelf: 'flex-start', color:'#fff', fontFamily:'Quantico, sans-serif'
+                        {/*<Avatar*/}
+                            {/*src={profile}*/}
+                        {/*/>*/}
+                        <BioStatement>
+                        <p style={{fontSize: 20, textShadow: '2px 1px black', alignSelf: 'left', color:'#fff', fontFamily:'Quantico, sans-serif',
 
                         }}><strong>Jeff Molter</strong> </p>
-                        <p style={{fontSize: 20, textShadow: '2px 1px black', marginLeft: '2rem', marginTop: -20, alignSelf: 'flex-start', color:'#fff', fontFamily:'Quantico, sans-serif', paddingRight: 5,
+                        <p style={{fontSize: 20, textShadow: '2px 1px black',   alignSelf: 'left', color:'#fff', fontFamily:'Quantico, sans-serif',
 
                         }}><strong>Full-Stack Developer</strong></p>
-                        </div>
+                        </BioStatement>
                     </ProfilePicContainer>
-                    <ProfileSummaryContainer>
-
-                    </ProfileSummaryContainer>
 
                     <ProfileConnectionsContainer>
                         <ProfileConnection>

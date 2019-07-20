@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbbefdda-df78-4016-9799-ed8f19893ca9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" afterPath="$PROJECT_DIR$/gatsby-config.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change beforePath="$PROJECT_DIR$/src/pages/jeff-dev-site.js" afterPath="$PROJECT_DIR$/src/pages/jeff-dev-site.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,48 +20,14 @@
     <favorites_list name="jeff-site" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.50317127">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="jeff-dev-site.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/pages/jeff-dev-site.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="190">
-                  <caret line="612" column="84" lean-forward="true" selection-start-line="612" selection-start-column="84" selection-end-line="612" selection-end-column="84" />
-                  <folding>
-                    <element signature="e#0#25#0" expanded="true" />
-                    <element signature="e#861#927#0" expanded="true" />
-                    <element signature="e#1518#1602#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ProjectCardComponent.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/ProjectCardComponent.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="98" column="1" lean-forward="false" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="gatsby-config.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/gatsby-config.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="607">
-                  <caret line="53" column="7" lean-forward="false" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="jeff-dev-site.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/style/jeff-dev-site.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="182">
-                  <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+                <state relative-caret-position="202">
+                  <caret line="552" column="145" lean-forward="false" selection-start-line="552" selection-start-column="145" selection-end-line="552" selection-end-column="145" />
                   <folding />
                 </state>
               </provider>
@@ -70,24 +37,21 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="jeff-dev-site.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/pages/jeff-dev-site.js">
+          <file leaf-file-name="jeff-dev-site.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/style/jeff-dev-site.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="356">
-                  <caret line="418" column="16" lean-forward="false" selection-start-line="418" selection-start-column="16" selection-end-line="418" selection-end-column="16" />
-                  <folding>
-                    <element signature="e#861#927#0" expanded="true" />
-                    <element signature="e#1518#1602#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="225">
+                  <caret line="15" column="26" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="15" selection-end-column="26" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ProjectCardComponent.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/ProjectCardComponent.js">
+          <file leaf-file-name="jeff-dev-site.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/pages/jeff-dev-site.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-264">
-                  <caret line="98" column="1" lean-forward="false" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
+                <state relative-caret-position="215">
+                  <caret line="267" column="23" lean-forward="false" selection-start-line="267" selection-start-column="23" selection-end-line="267" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
@@ -151,13 +115,13 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="43" />
-    <option name="y" value="48" />
-    <option name="width" value="1440" />
-    <option name="height" value="785" />
+    <option name="x" value="134" />
+    <option name="y" value="77" />
+    <option name="width" value="1349" />
+    <option name="height" value="806" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -170,32 +134,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="jeff-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jeff-site" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jeff-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jeff-site" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jeff-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jeff-site" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.stylesheets" />
@@ -260,15 +199,19 @@
       <workItem from="1556809748888" duration="1821000" />
       <workItem from="1560831260696" duration="10116000" />
       <workItem from="1561569984119" duration="2535000" />
-      <workItem from="1561590358776" duration="5588000" />
+      <workItem from="1561590358776" duration="6181000" />
+      <workItem from="1562688105333" duration="277000" />
+      <workItem from="1562941826770" duration="6000" />
+      <workItem from="1563123872121" duration="1525000" />
+      <workItem from="1563629481231" duration="2708000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262691000" />
+    <option name="totallyTimeSpent" value="267800000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="48" width="1440" height="785" extended-state="0" />
+    <frame x="134" y="77" width="1349" height="806" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16208598" sideWeight="0.49247313" order="0" side_tool="false" content_ui="combo" />
@@ -347,7 +290,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -557,7 +500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1800">
           <caret line="0" column="10080" lean-forward="false" selection-start-line="0" selection-start-column="10080" selection-end-line="0" selection-end-column="10080" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -576,47 +518,40 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/jeff-dev-site.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ProjectCardComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="98" column="1" lean-forward="false" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gatsby-config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
+        <state relative-caret-position="795">
           <caret line="53" column="7" lean-forward="false" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ProjectCardComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="98" column="1" lean-forward="false" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/jeff-dev-site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="26" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="15" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/jeff-dev-site.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="612" column="84" lean-forward="true" selection-start-line="612" selection-start-column="84" selection-end-line="612" selection-end-column="84" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-            <element signature="e#861#927#0" expanded="true" />
-            <element signature="e#1518#1602#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="215">
+          <caret line="267" column="23" lean-forward="false" selection-start-line="267" selection-start-column="23" selection-end-line="267" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
