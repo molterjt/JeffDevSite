@@ -561,11 +561,6 @@ class JeffDevSite extends React.Component{
                     </ProfilePicContainer>
 
                     <ProfileConnectionsContainer>
-                        <ProfileConnection>
-                            <a target="_blank" rel="noopener noreferrer" href={"https://www.linkedin.com/in/jeffrey-molter-8741a627/"}>
-                                <img src={LinkedIn} width={90} alt={'LinkedIn Logo'}/>
-                            </a>
-                        </ProfileConnection>
 
                         <ProfileConnection>
                             <a target="_blank" rel="noopener noreferrer" href={"https://github.com/molterjt?tab=repositories"}>
@@ -576,6 +571,12 @@ class JeffDevSite extends React.Component{
                         <ProfileConnection>
                             <a style={{color:'white'}} target="_blank" rel="noopener noreferrer" href={"http://www.instagram.com/jeffreyT513"}>
                                 <img src={whiteInsta} width={30} alt={'LinkedIn Logo'}/>
+                            </a>
+                        </ProfileConnection>
+                        
+                        <ProfileConnection>
+                            <a target="_blank" rel="noopener noreferrer" href={"https://www.linkedin.com/in/jeffrey-molter-8741a627/"}>
+                                <img src={LinkedIn} width={90} alt={'LinkedIn Logo'}/>
                             </a>
                         </ProfileConnection>
 
