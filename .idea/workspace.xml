@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fbbefdda-df78-4016-9799-ed8f19893ca9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change beforePath="$PROJECT_DIR$/src/pages/jeff-dev-site.js" afterPath="$PROJECT_DIR$/src/pages/jeff-dev-site.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,14 +19,14 @@
     <favorites_list name="jeff-site" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.6302711">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="jeff-dev-site.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/pages/jeff-dev-site.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="202">
-                  <caret line="552" column="145" lean-forward="false" selection-start-line="552" selection-start-column="145" selection-end-line="552" selection-end-column="145" />
+                <state relative-caret-position="462">
+                  <caret line="1055" column="126" lean-forward="false" selection-start-line="1055" selection-start-column="126" selection-end-line="1055" selection-end-column="126" />
                   <folding />
                 </state>
               </provider>
@@ -36,12 +35,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="jeff-dev-site.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/style/jeff-dev-site.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="225">
-                  <caret line="15" column="26" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="15" selection-end-column="26" />
+                  <caret line="15" column="26" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="15" selection-end-column="26" />
                   <folding />
                 </state>
               </provider>
@@ -50,8 +49,8 @@
           <file leaf-file-name="jeff-dev-site.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/pages/jeff-dev-site.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="215">
-                  <caret line="267" column="23" lean-forward="false" selection-start-line="267" selection-start-column="23" selection-end-line="267" selection-end-column="23" />
+                <state relative-caret-position="590">
+                  <caret line="292" column="25" lean-forward="false" selection-start-line="292" selection-start-column="25" selection-end-line="292" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -115,7 +114,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="134" />
+    <option name="x" value="77" />
     <option name="y" value="77" />
     <option name="width" value="1349" />
     <option name="height" value="806" />
@@ -203,15 +202,16 @@
       <workItem from="1562688105333" duration="277000" />
       <workItem from="1562941826770" duration="6000" />
       <workItem from="1563123872121" duration="1525000" />
-      <workItem from="1563629481231" duration="2708000" />
+      <workItem from="1563629481231" duration="2897000" />
+      <workItem from="1564075482597" duration="107000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267800000" />
+    <option name="totallyTimeSpent" value="268096000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="134" y="77" width="1349" height="806" extended-state="0" />
+    <frame x="77" y="77" width="1349" height="806" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16208598" sideWeight="0.49247313" order="0" side_tool="false" content_ui="combo" />
@@ -542,15 +542,15 @@
     <entry file="file://$PROJECT_DIR$/src/style/jeff-dev-site.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="15" selection-end-column="26" />
+          <caret line="15" column="26" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="15" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/jeff-dev-site.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="267" column="23" lean-forward="false" selection-start-line="267" selection-start-column="23" selection-end-line="267" selection-end-column="23" />
+        <state relative-caret-position="462">
+          <caret line="1055" column="126" lean-forward="false" selection-start-line="1055" selection-start-column="126" selection-end-line="1055" selection-end-column="126" />
           <folding />
         </state>
       </provider>

@@ -1052,6 +1052,9 @@ class JeffDevSite extends React.Component{
                                     style={{zIndex:-1}}
                                     title={'Tasked'}
                                     projectImage={Tasked_Complete}
+                                    projectLink={
+                                        <a target="_blank" rel="noopener noreferrer" href={'https://molterjt.github.io/Tasked/'}>http://www.theElephantTree.org</a>
+                                    }
                                     backTitle={'Features'}
                                     projectType={'Task Management React/Redux App'}
                                     featureList={
