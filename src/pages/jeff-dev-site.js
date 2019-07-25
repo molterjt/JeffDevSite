@@ -13,6 +13,7 @@ import Gallery from '../components/Gallery';
 import myBackGround from '../images/JeffOregon.jpeg';
 import profile from '../images/Jeff_Kofenya.jpg';
 import elephantTree from '../images/theelephanttree.png';
+import githubLogo from '../images/GitHub-Mark-Light-64px.png';
 import LinkedIn from '../images/LinkedInLogo.png';
 import whiteInsta from '../images/white-insta.png';
 import whiteBG from '../images/white-background.jpg';
@@ -563,6 +564,12 @@ class JeffDevSite extends React.Component{
                         <ProfileConnection>
                             <a target="_blank" rel="noopener noreferrer" href={"https://www.linkedin.com/in/jeffrey-molter-8741a627/"}>
                                 <img src={LinkedIn} width={90} alt={'LinkedIn Logo'}/>
+                            </a>
+                        </ProfileConnection>
+
+                        <ProfileConnection>
+                            <a target="_blank" rel="noopener noreferrer" href={"https://github.com/molterjt?tab=repositories"}>
+                                <img src={githubLogo} width={90} alt={'GitHub Logo'}/>
                             </a>
                         </ProfileConnection>
 
