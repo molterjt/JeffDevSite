@@ -196,7 +196,8 @@
 .modal-button:hover{
     /*background-color: springgreen;*/
     transition: all 0.3s ease 0s;
-    background: linear-gradient(45deg, rgb(50, 140, 50), rgb(250, 250, 250));
+    background: linear-gradient(45deg, rgb(50, 140, 50), rgb(250, 250,250));
+    /*background: white;*/
     color: black;
     height: 40px;
     width: auto;

@@ -357,7 +357,6 @@ const BioStatement = styled.div`
 const ProfileConnectionsContainer = styled.footer`
     display: flex;
     margin-top: 2rem;
-    margin: 1rem;
     flex:1;
     flex-direction: row;
     width: 100%;
