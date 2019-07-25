@@ -569,7 +569,7 @@ class JeffDevSite extends React.Component{
 
                         <ProfileConnection>
                             <a target="_blank" rel="noopener noreferrer" href={"https://github.com/molterjt?tab=repositories"}>
-                                <img src={githubLogo} width={90} alt={'GitHub Logo'}/>
+                                <img src={githubLogo} width={30} alt={'GitHub Logo'}/>
                             </a>
                         </ProfileConnection>
 
