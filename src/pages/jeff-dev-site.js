@@ -13,7 +13,7 @@ import Gallery from '../components/Gallery';
 import myBackGround from '../images/JeffOregon.jpeg';
 import profile from '../images/Jeff_Kofenya.jpg';
 import elephantTree from '../images/theelephanttree.png';
-import githubLogo from '../images/GitHub-Mark-Light-64px.png';
+import githubLogo from '../images/GitHub-Mark-Light-32px.png';
 import LinkedIn from '../images/LinkedInLogo.png';
 import whiteInsta from '../images/white-insta.png';
 import whiteBG from '../images/white-background.jpg';
