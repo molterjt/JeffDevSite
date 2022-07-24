@@ -51,29 +51,8 @@ const ProjectImageContainer =  styled.div`
     position: relative;
     background-size: ${props => props.backImageSize ? props.backImageSize : 'cover'};
     background-color: ${props =>
-    props.backColor ? props.backColor : 'transparent'};
-
-   
+    props.backColor ? props.backColor : 'transparent'};  
 `
-
-// const ProjectSummary = styled.div`
-//     display: flex;
-//     flex:1;
-//     width:100%;
-//     height: auto;
-//     align-content: flex-start;
-//     align-items: center;
-//     justify-content: space-around;
-//     text-align: left;
-//     padding: 5px;
-//     margin-top: 20px;
-//     overflow: auto;
-//      @media (max-width: 450px) {
-//         padding: 10px;
-//         padding-top: 180px;
-//      }
-//
-// `
 
 const ProjectSummary = styled.div`
     display: flex;

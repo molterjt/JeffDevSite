@@ -11,7 +11,6 @@ import Gallery from '../components/Gallery';
 
 /******** Pictures *************/
 import myBackGround from '../images/JeffOregon.jpeg';
-import profile from '../images/Jeff_Kofenya.jpg';
 import elephantTree from '../images/theelephanttree.png';
 import githubLogo from '../images/GitHub-Mark-Light-32px.png';
 import LinkedIn from '../images/LinkedInLogo.png';
@@ -546,9 +545,6 @@ class JeffDevSite extends React.Component{
                 <LeftProfileContainer>
 
                     <ProfilePicContainer>
-                        {/*<Avatar*/}
-                            {/*src={profile}*/}
-                        {/*/>*/}
                         <BioStatement>
                         <p style={{fontSize: 20, textShadow: '2px 1px black', alignSelf: 'left', color:'#fff', fontFamily:'Quantico, sans-serif',
 
@@ -1254,13 +1250,7 @@ class JeffDevSite extends React.Component{
                         </ProjectCardContainer>
                     </RecentWorkSection>
                     <SectionBreak>___</SectionBreak>
-
-
-
-
-
-
-                    <ContactSection ref={this.connectRef}>
+                    {/* <ContactSection ref={this.connectRef}>
                         <SectionTitle>Get Connected</SectionTitle>
 
                         <form
@@ -1303,7 +1293,7 @@ class JeffDevSite extends React.Component{
 
 
 
-                    </ContactSection>
+                    </ContactSection> */}
                     <footer style={{
                         justifyContent:'flex-end',
                         display: 'flex',
